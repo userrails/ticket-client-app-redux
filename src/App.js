@@ -1,17 +1,23 @@
 import React from 'react';
-import NewTicket from './components/NewTicket';
+import CreateTicket from './containers/CreateTicket';
+import TicketList from './containers/TicketList';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+const stylesApp = {
+  marginTop: 40
+}
+
 
 function App() {
   return (
     <div className="container">
-      <div className="row">
+      <div className="row" style={ stylesApp }>
         <div className="col-md-6">
-          <NewTicket />
+          <CreateTicket />
         </div>
         <div className="col-md-6">
-          Display Post
+          <TicketList />
         </div>
       </div>
     </div>

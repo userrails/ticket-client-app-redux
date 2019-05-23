@@ -17,7 +17,7 @@ class NewTicket extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     if (this.state.title.trim() && this.state.body.trim()) {
-      console.log(this.state);
+      this.props.onAddTicket(this.state);
       this.handleReset();
     }
   };
